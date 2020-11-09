@@ -1,0 +1,17 @@
+<h1>Welcome!</h1>
+
+<p>We have two context routeson is going to reverse a string which is passed the other will convert it to uppercase.</p>
+
+<ul>
+<li><a href="/rev/[1,2,3,4,5]">reverse</a></li>
+<li><a href="/cap/allislower">uppercase</a></li>
+</ul>
+{% if string is defined %}
+<p>The original: {{string}}</p>
+<p>Captialized: {{string | allcaps}}</p>
+{% endif %}
+
+{% if rev is defined %}
+<p>The original: {{rev}}</p>
+<p>Captialized: {{rev | reverse}}</p>
+{% endif %}
